@@ -1,45 +1,142 @@
-//задача 1. Используя метод forEach, выведите в консоль все элементы массива в функции
+// У вас есть массив продуктов из корзины:
 
-function showArrayElements(array) {
-    //ваш код тут
-}
+let goods = ["skirt", "top", "shorts"];
 
-showArrayElements(["one", "two", "three"]);
-showArrayElements(["Anna", "Inna", "Igors"]);
+// 1 Добавьте в конец массива еще 2 продукта "sunglasses" и "hat"
 
-//Задача 2. Используя методы map и filter, дополните функции, чтобы они выводили то, 
-//что указано в комментариях
+//ваш код
 
-function showOnlyNegativeNumbers(array) {
-    //код для выбора только отрицательных чисел в массиве
-}
+console.log("Задача 1", goods)  // ["skirt", "top", "shorts", "sunglasses", "hat"]
 
-showOnlyNegativeNumbers([5, -10, 3, -7]) // [-10, -7]
-showOnlyNegativeNumbers([35, -130, 3765, -4535]) // [-130, -4535]
+//2 Добавьте в начало массива еще 3 продукта: "pants", "dress", "gloves"
 
-function changeNames(array) {
-    //код, который все элементы массива (слова) сохраняет капслоком (больгими буквами)
-}
+//ваш код
 
-changeNames(["inna", "anna", "igor"]) // ["INNA", "ANNA", "IGOR"];
-changeNames(["one", "two", "three"]) // ["ONE", "TWO", "THREE"];
+console.log("Задача 2", goods)  // ["pants", "dress", "gloves", "skirt", "top", "shorts", "sunglasses", "hat"]
 
+//3 Удалите из этого массива первый элемент
 
-//Задача 3. Метод slice позволяет отрезать кусок строки. 
-//Если указываем в скобках ОДНО число - это НАЧАЛО отрезка. 
-//По умолчанию резать будем до конца строки. Например:
-// "word".slice(2) - От второго и до конца строки. Т.е. останется "rd" (w - нулевой символ, o - первый)
-// Если указываем ДВА числа в скобках - это НАЧАЛО и КОНЕЦ. Напрмер:
-// "mathematics".slice(2,4) - от второго символа до четвертого (не включительно!).
-// Т.е. останется "th"
+//ваш код
 
-//Дополните функцию, чтобы она отрезала от слова первую букву.
-function cutOffFirstLetter(word) {
-    //ваш код тут
-}
+console.log("Задача 2", goods)  // ["dress", "gloves", "skirt", "top", "shorts", "sunglasses", "hat"]
 
-cutOffFirstLetter("Anna"); //"nna"
-cutOffFirstLetter("Inna"); //"nna"
-cutOffFirstLetter("Igor"); //"gor"
+// 4 Удалите последний элемент из этого массива
+
+//ваш код
+
+console.log("Задача 2", goods)  // ["pants", "dress", "gloves", "skirt", "top", "shorts", "sunglasses"]
 
 
+//5 объедините эти три массива в один:
+
+const cart1 = ["milk", "bread", "water"];
+const cart2 = ["sweets", "fanta", "cucumbers"];
+const cart3 = ["apples", "oranges", "juice"];
+
+//ваш код тут 
+
+console.log("Задача 5", {тут название вашего нового массива, в который объединятся все три}) //должен появиться в консоли массив, который содержит элементы этих трех массивов
+
+// Далее вы работаете с этим массивом:
+
+let users = ["admin", "seller", "customer"];
+
+// 6 Выведите по очереди всех юзеров в консоль
+
+//ваш код тут
+
+// 7 Выведите в консоль фразы: {роль} is a user. 
+// Всего в консоль должно вывестись 3 фразы по очереди :
+// admin is a user
+// seller is a user
+// customer is a user
+
+//ваш код тут
+
+// 8 Выведите в консоль фразы: {роль } is user number {index}
+// Всего в консоль должно вывестись 3 фразы по очереди :
+// admin is user number 0
+// seller is user number 1
+// customer is user number 2
+
+// ваш код тут
+
+// 9 Создайте на основе массива users массив, в котором все названия ролей будут написаны большими буквами 
+
+//ваш код тут
+
+console.log("Задача 9", {тут название вашего массива}) // ["ADMIN", "SELLER", "CUSTOMER"]
+
+// 10 Создайте на основе массива user массив, в котором будут храниться длины слов-ролей
+
+// ваш код тут
+
+console.log("Задача 10", {тут название вашего массива}) // [5, 6, 8]
+
+//11 Создайте на основе массива users массив, который будет хранить только те роли, чья длина - четное число (кратно двум)
+
+//ваш код
+
+console.log("Задача 11", {тут название вашего массива}) // ["seller", "customer"]
+
+
+// Работа ведется с массивом products
+
+const products = [
+    {
+        productName: "apple",
+        kind: "fruit",
+        price: "15"
+    },
+    {
+        productName: "tomato",
+        kind: "vegetable",
+        price: "12"
+    },
+    {
+        productName: "sausage",
+        kind: "meat",
+        price: "50"
+    },
+    {
+        productName: "juice",
+        kind: "drink",
+        price: "20"
+    },
+    {
+        productName: "orange",
+        kind: "fruit",
+        price: "25"
+    }
+]
+
+//12 Выведите в консоль информацию по каждому массиву в виде:
+// {productName} costs {price}. It's {kind}
+
+//ваш код тут
+
+// Должны получиться следуюшие строки:
+// apple costs 15. It's fruit
+// tomato costs 12. It's vegetable
+// sausage costs 50. It's meat
+// juice costs 20. It's drink
+// orange costs 25. It's fruit
+
+//13 Создайте на основе массива products массив, в котором будут храниться только фрукты. 
+
+//ваш код тут
+
+console.log("Задание 13", {тут название вашего массива}) 
+//должно вывестись в консоль:
+// [
+//     {
+//         productName: "apple",
+//         kind: "fruit",
+//         price: "15"
+//     },
+//     {
+//         productName: "orange",
+//         kind: "fruit",
+//         price: "25"
+//     }
+// ]
